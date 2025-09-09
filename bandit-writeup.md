@@ -17,7 +17,7 @@ Use `ssh` (Secure Shell) to log in remotely. Successful connection gives us acce
 - `ssh`
 
 **Command:**  
-```bash
+
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 ## 🔹 Level 1 → 2
@@ -35,7 +35,7 @@ Since `-` conflicts with stdin usage, we explicitly specify the path as `./-` to
 - `cat` (display file content)
 
 **Command:**  
-```bash
+
 cat ./-
 
 ## 🔹 Level 2 → 3
@@ -53,7 +53,7 @@ Spaces in filenames must be handled by wrapping the name in quotes or escaping t
 - `cat`
 
 **Command:**  
-```bash
+
 cat "spaces in this filename"
 
 ## 🔹 Level 3 → 4
@@ -73,7 +73,7 @@ Navigate into the `inhere` directory, list hidden files using `ls -a`, then read
 - `cat`
 
 **Commands:**  
-```bash
+
 cd inhere
 ls -a
 cat .hidden
@@ -95,7 +95,7 @@ Use the `file` command to determine the type of each file in the directory. The 
 - `cat`
 
 **Commands:**  
-```bash
+
 cd inhere
 file ./*
 cat ./-file07
